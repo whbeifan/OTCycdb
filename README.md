@@ -9,7 +9,7 @@ Oxytetracycline biosynthesis and degradation database
 
 [4] [https://kegg.jp/entry/K19542](https://kegg.jp/entry/K19542) #四环素和土霉素耐药基因
 
-## 中国国内访问KEGG数据的方法
+## 中国大陆访问KEGG数据的方法
 Windows系统的HOSTS文件路径：C:\Windows\System32\drivers\etc\HOSTS 或 C:\Windows\System32\drivers\etc\hosts
 linux系统的HOSTS文件路径：/etc/hosts
 在HOSTS文件中写入如下信息即可：
