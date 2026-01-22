@@ -15,7 +15,6 @@ Windows系统的HOSTS文件路径：C:\Windows\System32\drivers\etc\HOSTS 或 C:
 linux系统的HOSTS文件路径：/etc/hosts
 
 在HOSTS文件中写入如下信息即可：
--------------------
 ```
 133.103.200.21	www.kegg.jp
 133.103.200.21	kegg.jp
@@ -24,4 +23,4 @@ linux系统的HOSTS文件路径：/etc/hosts
 133.103.200.27	rest.kegg.jp
 133.103.200.27	www.rest.kegg.jp
 ```
---------------------
+
