@@ -1,6 +1,6 @@
 # OTCycdb
 Oxytetracycline biosynthesis and degradation database
-<img width="1420" height="1101" alt="OTCyc" src="https://github.com/whbeifan/OTCycdb/blob/main" />
+<img width="1420" height="1101" src="https://github.com/whbeifan/OTCycdb/blob/main/OTCyc.png" />
 
 ## Reference pathway
 [1] [https://kegg.jp/pathway/map00253](https://kegg.jp/pathway/map00253)
