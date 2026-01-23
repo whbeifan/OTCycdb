@@ -26,3 +26,11 @@ linux系统的HOSTS文件路径：/etc/hosts
 133.103.200.27	www.rest.kegg.jp
 ```
 
+## Annotation
+```
+/work/software/kofamscan/v1.3.0/bin/exec_annotation -o meta.unigene.OTCdb.temp --profile /Work/db/OTCdb/db \
+  --ko-list /Work/database/kegg/2025/ko_list \
+  --cpu 10 --e-value 1e-05 --format detail-tsv meta.uniprotein.fasta
+rm -rf tmp
+python /Work/db/OTCdb/get_kofamscan2best.py meta.unigene.OTCdb.temp >meta.unigene.OTCdb.out
+```
