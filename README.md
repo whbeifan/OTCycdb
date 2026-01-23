@@ -27,10 +27,21 @@ linux系统的HOSTS文件路径：/etc/hosts
 ```
 
 ## Annotation
+kofamscan annotation:
 ```
 /work/software/kofamscan/v1.3.0/bin/exec_annotation -o meta.unigene.OTCdb.temp --profile /Work/db/OTCdb/db \
   --ko-list /Work/database/kegg/2025/ko_list \
   --cpu 10 --e-value 1e-05 --format detail-tsv meta.uniprotein.fasta
 rm -rf tmp
 python /Work/db/OTCdb/get_kofamscan2best.py meta.unigene.OTCdb.temp >meta.unigene.OTCdb.out
+```
+diamond annotation:
+```
+diamond blastp --query meta.uniprotein.fasta --db /Work/db/OTCdb/OTCyc.dmnd \
+  --outfmt 6 qseqid sseqid pident length mismatch gapopen qstart qend sstart send evalue bitscore qlen slen stitle \
+  --max-target-seqs 5 --evalue 1e-05 --threads 10 --out meta.uniprotein.OTCyc.m6
+#下面是筛选覆盖度大于30%，相似度大于90%的注释结果（分析的是可以适当放宽松一些）
+python /Work/db/OTCdb/blast_filter.py meta.uniprotein.OTCyc.m6 \
+  --outfmt std qlen slen stitle --out qseqid sseqid pident length qlen slen qstart qend sstart send stitle evalue bitscore \
+  --min_qcov 30 --min_scov 30 --min_pident 90 --evalue 1e-05 --best >meta.uniprotein.OTCyc.tsv
 ```
