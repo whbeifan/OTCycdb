@@ -34,7 +34,7 @@ def read_kofamscan(file):
     fh.close()
 
 
-def get_kofamscan2best(file):
+def get_kofamscan2best(file, evalue=1e-5):
 
     r = OrderedDict()
     for line in read_kofamscan(file):
@@ -42,6 +42,8 @@ def get_kofamscan2best(file):
             temp = line[1::]
             r[temp[0]] = temp
         else:
+            if float(line[4]) >= evalue:
+                continue
             score = float(line[3])
             if line[0] in r:
                 temp = r[line[0]]
@@ -64,6 +66,8 @@ def add_help_parser(parser):
 
     parser.add_argument("input", metavar="FILE", type=str, 
         help="Input the kofamscan2 database annotation results")
+    parser.add_argument("-ev", "--evalue", metavar="FLOAT", type=float, default=1e-5,
+        help="Set the filter to exclude results with an E-value greater than this, default=1e-5")
 
     return parser
 
@@ -85,7 +89,7 @@ attention:
      get_kofamscan2best.py kofamscan.tsv  >KEGG.tsv
 ''')
     args = add_help_parser(parser).parse_args()
-    get_kofamscan2best(args.input)
+    get_kofamscan2best(args.input, evalue=args.evalue)
 
 
 if __name__ == "__main__":
