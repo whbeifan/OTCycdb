@@ -11,7 +11,7 @@ Oxytetracycline biosynthesis and degradation database
 
 [4] [https://kegg.jp/entry/K19542](https://kegg.jp/entry/K19542) #四环素和土霉素耐药基因
 
-genes：[prpD、uaZ、AlkB](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/)、[tet34、UGT2B7](https://pubmed.ncbi.nlm.nih.gov/40578705/)、TRI、tetX
+genes：[prpD、uaZ(pucL)、AlkB](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/)、[tet34、UGT2B7](https://pubmed.ncbi.nlm.nih.gov/40578705/)、TRI、tetX
 
 ## 中国大陆访问KEGG数据的方法
 Windows系统的HOSTS文件路径：C:\Windows\System32\drivers\etc\HOSTS 或 C:\Windows\System32\drivers\etc\hosts
