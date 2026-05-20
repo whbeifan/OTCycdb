@@ -10,6 +10,7 @@ Oxytetracycline biosynthesis and degradation database
 [3] [https://kegg.jp/entry/DG00397](https://kegg.jp/entry/DG00397)
 
 [4] [https://kegg.jp/entry/K19542](https://kegg.jp/entry/K19542) #四环素和土霉素耐药基因
+gene：[prpD、uaZ、AlkB](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/)、tet34、UGT2B7、TRI、tetX
 
 ## 中国大陆访问KEGG数据的方法
 Windows系统的HOSTS文件路径：C:\Windows\System32\drivers\etc\HOSTS 或 C:\Windows\System32\drivers\etc\hosts
@@ -45,3 +46,6 @@ python /Work/db/OTCdb/blast_filter.py meta.uniprotein.OTCyc.m6 \
   --outfmt std qlen slen stitle --out qseqid sseqid pident length qlen slen qstart qend sstart send stitle evalue bitscore \
   --min_qcov 30 --min_scov 30 --min_pident 90 --evalue 1e-05 --best >meta.uniprotein.OTCyc.tsv
 ```
+
+## References
+[1] Wang B, Xu W, Wang K, Lin H, Zhang X, Ahmad Z. Novel enzymes involved in the biotransformation of oxytetracycline by Arthrobacter nicotianae OTC-16. Microbiol Spectr. 2025 Sep 2;13(9):e0056225. doi: 10.1128/spectrum.00562-25. Epub 2025 Aug 12. PMID: 40792504; PMCID: [PMC12403558](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/). 
