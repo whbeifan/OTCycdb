@@ -11,7 +11,7 @@ Oxytetracycline biosynthesis and degradation database
 
 [4] [https://kegg.jp/entry/K19542](https://kegg.jp/entry/K19542) #四环素和土霉素耐药基因
 
-genes：[prpD、uaZ、AlkB](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/)、tet34、UGT2B7、TRI、tetX
+genes：[prpD、uaZ、AlkB](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/)、[tet34、UGT2B7](https://pubmed.ncbi.nlm.nih.gov/40578705/)、TRI、tetX
 
 ## 中国大陆访问KEGG数据的方法
 Windows系统的HOSTS文件路径：C:\Windows\System32\drivers\etc\HOSTS 或 C:\Windows\System32\drivers\etc\hosts
@@ -50,3 +50,5 @@ python /Work/db/OTCdb/blast_filter.py meta.uniprotein.OTCyc.m6 \
 
 ## References
 [1] Wang B, Xu W, Wang K, Lin H, Zhang X, Ahmad Z. Novel enzymes involved in the biotransformation of oxytetracycline by Arthrobacter nicotianae OTC-16. Microbiol Spectr. 2025 Sep 2;13(9):e0056225. doi: 10.1128/spectrum.00562-25. Epub 2025 Aug 12. PMID: 40792504; PMCID: [PMC12403558](https://pmc.ncbi.nlm.nih.gov/articles/PMC12403558/). 
+
+[2] Yang C, Zhao Z, Sun C, et al. Synergistic mechanism of tetracycline degradation by poor-degrading microbe Serratia marcescens cooperated with insect during environmental decomposition cycle. Bioresour Technol. 2025;435:132887. doi:[10.1016/j.biortech.2025.132887](https://pubmed.ncbi.nlm.nih.gov/40578705/)
